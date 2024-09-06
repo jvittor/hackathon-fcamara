@@ -10,6 +10,14 @@ export default {
     fontFamily: {
       sans: ['var(--font-sans)', ...fontFamily.sans],
     },
+    colors: {
+      black: {
+        100: '#C4C4C4',
+        200: '#515255',
+      },
+      orange: '#FF5522',
+      white: '#FCFDFF',
+    },
   },
   plugins: [tailwindTypography],
 } satisfies Config;

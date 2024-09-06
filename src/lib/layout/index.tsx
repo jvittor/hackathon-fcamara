@@ -15,10 +15,11 @@ type LayoutProps = {
 const Layout = ({ children }: LayoutProps) => {
   const pathname = usePathname();
   const shouldShowHeader = pathname === '/';
+  const GoogleID = process.env.GOOGLE_ID ?? '';
 
   return (
     <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-      <GoogleOAuthProvider clientId="c">
+      <GoogleOAuthProvider clientId={GoogleID}>
         <div className="flex flex-col">
           {shouldShowHeader && <Header />}
           <main>{children}</main>

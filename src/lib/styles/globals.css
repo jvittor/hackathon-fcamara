@@ -27,4 +27,12 @@
     @apply mx-auto p-6 sm:p-8;
     max-width: 48rem;
   }
+
+  input[type='text']:focus ~ .input-text,
+  input[type='text']:not(:placeholder-shown) ~ .input-text {
+    color: black;
+    bg-color: white;
+    /* azul padrão de text-blue-500 */
+    transform: translateY(-2.5rem) translateX(-0.5rem) scale(0.75);
+  }
 }
