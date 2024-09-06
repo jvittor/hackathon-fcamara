@@ -1,9 +1,9 @@
 import type { MetadataRoute } from 'next';
 
 const manifest = (): MetadataRoute.Manifest => ({
-  short_name: 'nextarter-tailwind',
+  short_name: 'Orange Portifólio',
   name: 'Next.js App Template',
-  lang: 'en',
+  lang: 'pt-br',
   start_url: '/',
   background_color: '#FFFFFF',
   theme_color: '#FFFFFF',
