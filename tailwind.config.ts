@@ -9,6 +9,7 @@ export default {
   theme: {
     fontFamily: {
       sans: ['var(--font-sans)', ...fontFamily.sans],
+      roboto: ['Roboto', 'sans-serif'],
     },
     colors: {
       black: {
@@ -16,8 +17,9 @@ export default {
         200: '#515255',
       },
       orange: '#FF5522',
-      white: '#FCFDFF',
+      white: '#FEFFFE',
     },
+
   },
   plugins: [tailwindTypography],
 } satisfies Config;
